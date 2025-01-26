@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.box-loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 85vh;
+  align-items: center;
+
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 40px;
+  min-width: 350px;
+  width: 100%;
+  max-width: 400px;
+  background: no-repeat linear-gradient(#8873EF 0 0) #F4F4F5;
+  background-size: 60%;
+  animation: anim .6s infinite;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32.5px;
+}
+
+@keyframes anim {
+  0% {
+    background-position: -150% 0, -150% 0;
+  }
+
+  66% {
+    background-position: 250% 0, 150% 0;
+  }
+
+  100% {
+    background-position: 250% 0, -250% 0;
+  }
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../../public/png/backgroundMain.jpg');
+  background-size: cover;
+  opacity: 10%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}

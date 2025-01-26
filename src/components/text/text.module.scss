@@ -1,0 +1,28 @@
+.textContainer {
+    width: auto;
+    min-width: 560px;
+    max-width: 560px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .line {
+        width: 60px;
+        height: 3px;
+        background-color: black;
+        margin-top: 31px;
+    }
+
+    .text {
+        width: auto;
+        max-width: 460px;
+        height: auto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-bottom: 47px;
+    }
+}

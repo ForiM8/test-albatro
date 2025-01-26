@@ -1,0 +1,105 @@
+.page {
+    width: 100%;
+    height: 100%;
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 86vh;
+        width: 1161px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            width: auto;
+            height: auto;
+
+            .buttonContainer {
+                width: auto;
+                height: auto;
+                min-height: 70px;
+                margin-bottom: 86px;
+              
+                .button {
+                  position: relative;
+                  width: 260px;
+                  height: 70px;
+                  font-size: 25px;
+                  font-weight: 400;
+                  line-height: 32.5px;
+                  text-align: center;
+                  border: none;
+                  cursor: pointer;
+                  border-radius: 20px;
+                  overflow: hidden;
+                  transition: .3s;
+              
+                  &:hover {
+                    filter: drop-shadow(0px 0px 35px #4824ff40);
+                  }
+              
+                  &:before {
+                    content: '';
+                    position: absolute;
+                    height: 300px;
+                    width: 30px;
+                    background: #ffffffbd;
+                    filter: blur(10px);
+                    transition: 1s;
+                    transform: rotate(-20deg) translateX(-70px) translateY(-200px);
+                  }
+              
+                  &:hover:before {
+                    transform: rotate(-20deg) translateX(250px);
+                  }
+                }
+              }
+
+            .socialContainer {
+                width: auto;
+                max-width: 320px;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .text {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20.8px;
+                    text-align: center;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                }
+
+                .iconContainer {
+                    width: 220px;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .right{
+            width: auto;
+            height: auto;
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('../../public/png/backgroundMain.jpg');
+        background-size: cover;
+        opacity: 10%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
